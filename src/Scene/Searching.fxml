@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="baseBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SearchingController">
+   <center>
+      <GridPane hgap="10.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="107.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="181.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton text="Add Entry" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <TextField fx:id="firstNameTextField" style="-fx-border-color: #7400FF;" GridPane.columnIndex="1" />
+            <TextField fx:id="emailTextField" style="-fx-border-color: #7400FF;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="professionTextField" style="-fx-border-color: #7400FF;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="phoneNumberTextField" style="-fx-border-color: #7400FF;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="lastNameTesxtField" style="-fx-border-color: #7400FF;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="First Name">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label text="Last Name" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label text="User Email" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label prefHeight="19.0" prefWidth="98.0" text="Phone Number" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label text="Profession" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <JFXButton fx:id="addButton" defaultButton="true" style="-fx-background-color: #7400FF;" text="Add Entry" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXRadioButton fx:id="femaleRadioButton" text="Female" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <selectedColor>
+                  <Color red="0.45490196347236633" blue="1.0" />
+               </selectedColor>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="maleRadioButton" text="Male" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+               <selectedColor>
+                  <Color red="0.45490196347236633" blue="1.0" />
+               </selectedColor>
+            </JFXRadioButton>
+            <Label text="Gender" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+         </children>
+      </GridPane>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <top>
+      <HBox prefHeight="78.0" prefWidth="680.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="66.0" prefWidth="16.0" text="E" textFill="#7400ff">
+               <font>
+                  <Font name="Arial Bold" size="32.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="68.0" prefWidth="121.0" text="COMPANY">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label prefHeight="68.0" prefWidth="286.0" text="The company Employer profile">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label layoutX="30.0" layoutY="30.0" prefHeight="66.0" prefWidth="17.0" text="E" textFill="#7400ff">
+               <font>
+                  <Font name="Arial Bold" size="32.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label layoutX="48.0" layoutY="30.0" prefHeight="68.0" prefWidth="123.0" text="COMPANY">
+               <font>
+                  <Font name="Arial Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <bottom>
+      <VBox prefHeight="122.0" prefWidth="680.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="652.0" spacing="10.0">
+               <children>
+                  <Label fx:id="selectedRowLabel" prefHeight="17.0" prefWidth="506.0" text="No rows has been selected" textFill="RED">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="backButton" onAction="#back" prefHeight="15.0" prefWidth="60.0" style="-fx-background-color: #7400FF;" text=" ">
+                     <graphic>
+                        <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: #7400FF;" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="deleteButton" cancelButton="true" prefHeight="27.0" prefWidth="81.0" style="-fx-background-color: #7400FF;" text="Delete Entry" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="680.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="searchImageViewer" fitHeight="21.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="31.0" />
+                  <TextField fx:id="searchTextField" prefHeight="25.0" prefWidth="714.0" style="-fx-background-radius: 15,15; -fx-border-style: #7400FF;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <left>
+      <TableView fx:id="tableView" prefHeight="380.0" prefWidth="394.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="firtColumn" prefWidth="92.0" text="First Name" />
+          <TableColumn fx:id="lastColumn" prefWidth="100.0" text="Last Name" />
+            <TableColumn fx:id="emailColumn" prefWidth="115.0" text="Email" />
+            <TableColumn fx:id="phoneColumn" prefWidth="86.0" text="Phone Number" />
+        </columns>
+      </TableView>
+   </left>
+</BorderPane>

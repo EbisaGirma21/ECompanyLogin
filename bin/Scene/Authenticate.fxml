@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AuthenticateController">
+   <children>
+      <PasswordField fx:id="passwordTextField" layoutX="232.0" layoutY="356.0" prefHeight="26.0" prefWidth="237.0" promptText="Password" style="-fx-border-color: #7400FF;" />
+      <TextField fx:id="userNameTextFeild" layoutX="232.0" layoutY="287.0" prefHeight="26.0" prefWidth="237.0" promptText="Username" style="-fx-border-color: #7400FF;" />
+      <JFXCheckBox fx:id="showPasswordCheckBox" checkedColor="#7400ff" layoutX="232.0" layoutY="405.0" text="Show Password!" unCheckedColor="#7400ff" />
+      <JFXButton fx:id="loginButton" layoutX="232.0" layoutY="467.0" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: #7400FF;" text="Login" textFill="WHITE" />
+      <JFXButton fx:id="signUpButton" layoutX="370.0" layoutY="467.0" onAction="#loadRegistration" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: #7400FF;" text="SignUp" textFill="WHITE" />
+      <Label layoutX="280.0" layoutY="222.0" text="WELCOME">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageViewer" fitHeight="150.0" fitWidth="134.0" layoutX="283.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="incorrectLabel" alignment="CENTER" layoutX="237.0" layoutY="523.0" prefHeight="17.0" prefWidth="227.0" textAlignment="CENTER" textFill="#f50505" />
+      <FontAwesomeIcon iconName="USER" layoutX="205.0" layoutY="309.0" size="2em" wrappingWidth="10.428571701049805" />
+      <FontAwesomeIcon iconName="LOCK" layoutX="207.0" layoutY="378.0" size="2em" />
+      <TextField fx:id="passField" layoutX="232.0" layoutY="356.0" prefHeight="27.0" prefWidth="237.0" style="-fx-border-color: #7400FF;" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
