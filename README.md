@@ -8,6 +8,7 @@
 - JavaFX SDK - 17.0.2
 - fontawesomefx-8.9
 - jfoenix-17.0.2
+- mysql-connector-java-8.0.29
 
 ## vmArgs Setup
 
