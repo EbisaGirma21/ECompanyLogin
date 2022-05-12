@@ -17,3 +17,9 @@
 ```
 
 👉 Sample screenshots taken
+
+<img src="screenshot/photo_2022-05-12_20-57-59.jpg" alt="Login - Screen" width="400"/><br>
+
+<img src="screenshot/photo_2022-05-12_20-58-06.jpg" alt="Search - Screen" width="400"/><br>
+
+<img src="screenshot/photo_2022-05-12_20-58-12.jpg" alt="Sign up - Screen" width="400"/><br>
