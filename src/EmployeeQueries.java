@@ -9,7 +9,7 @@ import java.util.List;
 public class EmployeeQueries {
     private static final String url = "jdbc:mysql://localhost:3306/ECompany";
     private static final String user = "root";
-    private static final String password = "Eg1325#@";
+    private static final String password = "root";
 
     private Connection connection;
     private CallableStatement selectAll;
