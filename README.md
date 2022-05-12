@@ -6,7 +6,7 @@
 
 - JDK - 17.0.2
 - JavaFX SDK - 17.0.2
-- fontawesomefx-8.9
+- fontawesomefx-8.1
 - jfoenix-17.0.2
 - mysql-connector-java-8.0.29
 
